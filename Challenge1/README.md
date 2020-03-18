@@ -13,6 +13,6 @@ The first challenge is more or less just getting set up for the first real chall
 5. Using Add/Commit/Push add your script to the repo in the appropriate folder.
 6. If you haven't already, make a zoom account.
 
-I will set up a zoom meeting for Friday so we can go through these!
+I will set up a zoom meeting for Friday so we can go through any problems!
 
 The Physics must go on!
