@@ -1,5 +1,7 @@
 # Challenge 1: Github Down to Business (to defeat the Huns!)
 
+Due: Mar 18, 2020
+
 The first challenge is more or less just getting set up for the first real challenge that I will post on Friday!
 
 ## Challenge Tasks:
