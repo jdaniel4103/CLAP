@@ -1,4 +1,4 @@
-#Challenge 1: Github Down to Business (to defeat the Huns!)
+# Challenge 1: Github Down to Business (to defeat the Huns!)
 
 The first challenge is more or less just getting set up for the first real challenge that I will post on Friday!
 
