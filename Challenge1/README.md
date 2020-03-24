@@ -22,6 +22,4 @@ The Physics must go on!
 | Name    | Time (ms)|
 | ------- | --------:|
 | John    | 49       |
-| Kayla   |          |
-| Matt    |          |
 | Tristan | 49       |
