@@ -16,3 +16,12 @@ The first challenge is more or less just getting set up for the first real chall
 I will set up a zoom meeting for Friday so we can go through any problems!
 
 The Physics must go on!
+
+## Results:
+
+| Name    | Time (ms)|
+| ------- | --------:|
+| John    | 49       |
+| Kayla   |          |
+| Matt    |          |
+| Tristan | 49       |
