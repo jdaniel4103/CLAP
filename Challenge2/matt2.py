@@ -1,26 +1,25 @@
+import sys
+
 i = 3
+holder = 1
 seqpos = 1
-holder = 0
 
 print('Type a Positive Integer please: ' )
-number = input()
+number = int(sys.argv[1])
 
-while True:
-	if int(number) == 1:
+if number == 1:
 		seqpos = 0
-		break
 
-	if int(number) == 2 or 3:
-		seqpos = seqpos
-		break	
+if number == 2 or 3:
+	seqpos = seqpos
 
-	holder = seqpos
-	seqpos = seqpos + holder		
-	i = i + 1
+if number > 3:
+	while number != i:
 
-	if i == int(number):
-		print(seqpos)
-		break
+		seqpos = seqpos + holder		
+		i = i + 1
+		holder = seqpos - holder
 
+print(seqpos)
 
 more = input ()
