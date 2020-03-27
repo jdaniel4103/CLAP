@@ -12,7 +12,7 @@ try:
 except:
 	funcarg = ''
 
-names = ['daniel','rojo']
+names = ['daniel','rojo','matt']
 times = {}
 n = 60
 
