@@ -17,7 +17,7 @@ Write a script that is called along with a temperature in Kelvin as a system arg
 1. For your import statement, using "import matplotlib.pyplot as plt" is a useful shortcut.
 2. Use numpy arrays for the data instead of python lists.
 3. Make sure to label axes and title your plot!
-4. Pay attention to units!  Otherwise you fill find your gaussian looks more like either a delta function or a flat line instead of a gaussian!
+4. Pay attention to units!  Otherwise you will find your gaussian looks more like either a delta function or a flat line instead of a gaussian!
 
 
 ## Constants
