@@ -23,7 +23,7 @@ Write a script that is called along with a temperature in Kelvin as a system arg
 ## Constants
 
 | Constant  | Value                           |
-| --------- | -------------------------------:|
+| --------- | ------------------------------- |
 | f_0       | 1146.331050 THz                 |
 | m         | 62 amu          				  |
 | c         | 299792458 m/s                   |
