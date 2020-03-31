@@ -22,10 +22,10 @@ Write a script that is called along with a temperature in Kelvin as a system arg
 
 ## Constants
 
-| Constant  | Value                           |
-| --------- | ------------------------------- |
-| f_0       | 1146.331050 THz                 |
-| m         | 62 amu          				  |
-| c         | 299792458 m/s                   |
-| k         | 1.38064852e-23 m^2 * kg * s^-2  |
-| amu       | 1.6605402e-27 kg                |
+| Constant  | Value            | Units               |
+| --------- | ----------------:| ------------------- |
+| f_0       | 1146.331050      | THz                 |
+| m         | 62               | amu                 |
+| c         | 299792458        | m/s                 |
+| k         | 1.38064852e-23   | m^2 * kg * s^-2     |
+| amu       | 1.6605402e-27    | kg                  |
