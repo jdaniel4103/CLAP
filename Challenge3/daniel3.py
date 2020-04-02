@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
-
 # constants
 kb = 1.38064852e-23 # m^2*kg*s^-2*K^-1
 amu = 1.6605402e-27 # kg/amu
@@ -22,14 +21,18 @@ except:
 fmin = -500
 fmax = 500
 nf = 1000
-f = np.linspace(fmin,fmax,nf)*1e6 + f0
+f = np.linspace(fmin,fmax,nf)*1e6 + f0 # frequency range +-500 MHz around line
 
 sigma = np.sqrt(kb*T/(m*c**2))*f0
 
-A = 1/(sigma*np.sqrt(2*np.pi))
+A = 1/(sigma*np.sqrt(2*np.pi)) # Scale factor for Gaussian
 
-Abs = A*np.exp(-(f-f0)**2/(2*sigma**2))
+Abs = A*np.exp(-(f-f0)**2/(2*sigma**2)) # Doppler broadened line
 
+# Make plot
 plt.figure()
-plt.plot(f,Abs)
+plt.plot(f*1e-12,Abs)
+plt.xlabel('Frequency (THz)')
+plt.ylabel('Absorption (arb.)')
+plt.title('Doppler Broadened AlCl Line at {}K'.format(T))
 plt.show()
