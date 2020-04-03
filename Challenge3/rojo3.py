@@ -9,7 +9,7 @@ import math
 
 def sd(temperature):
 
-	f0 = 1146.331050 # Tetrahertz
+	f0 = 1146.331050 # Terahertz
 	m = 62 * (1.6605402*pow(10,-27)) #unit = kg (m*amu)
 	c = 299792458 #m/s
 	k = 1.38064852*pow(10,-23)
