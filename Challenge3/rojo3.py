@@ -22,7 +22,7 @@ def sd(temperature):
 def gaussian(sd): #+-500 MhZ from f0
     
     f0 = 1146.331050 
-    f = np.linspace(f0-0.005,f0+0.005,100)
+    f = np.linspace(f0-0.0005,f0+0.0005,100)
     absorption = 1/(sd*np.sqrt(2*math.pi))*np.exp(-np.power(f-f0,2)/(2*sd**2))
     plt.figure
     plt.plot(f,absorption, label = "$Al^27Cl^35$")
