@@ -1,4 +1,4 @@
-# Challenge 4: 
+# Challenge 4: Lmfitting
 
 This Challenge simulates a rudimentary method for fitting data.  I have generated sample data (with some random noise added) for an AlCl transition at a particular temperature.  Your job, is to read in the data from the data file and frequency file and use lmfit to fit the same doppler broadened gaussian function from Challenge 3.  Your script should print to the terminal window the transition line (f0) and the temperature of the sample (T).
 
