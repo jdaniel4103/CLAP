@@ -1,5 +1,5 @@
 # John Daniel
-# Challenge 4: 
+# Challenge 4: Lmfitting
 # This script reads in data from a file and uses lmfit to get the temperature and the line center.
 
 import matplotlib.pyplot as plt
