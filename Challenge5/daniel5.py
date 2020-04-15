@@ -7,7 +7,7 @@ from configparser import ConfigParser
 import sys
 
 def get_state_E(Y,v,J):
-
+	# Dunham Expansion
 	E = 0.0
 	for i in range(3):
 		for j in range(3):
@@ -17,25 +17,25 @@ def get_state_E(Y,v,J):
 
 
 def get_transition_E(Y1,v1,J1,Y2,v2,J2):
-	
+	# Difference between state energies (transition energy)
 	return (get_state_E(Y2,v2,J2) - get_state_E(Y1,v1,J1))
 
 
 def read_in_config(filename = 'line_config.ini'):
 
-	config = ConfigParser()
-	config.read(filename)
-	state_ids = config.sections()
+	config = ConfigParser() # creates config object
+	config.read(filename) # reads in file
+	state_ids = config.sections() # gets sections names
 	states = {}
 
 	for state in state_ids:
 		coeff_mat = np.zeros((3,3))
-		coeffs = config.options(state)
+		coeffs = config.options(state) # gets coefficient names i.e. 'y10'
 		states[state] = {}
 		for coeff in coeffs:
-			new_coeff = np.float(config.get(state,coeff))
+			new_coeff = np.float(config.get(state,coeff)) # gets coefficient value
 			states[state][coeff] = new_coeff
-			name_list = list(coeff)
+			name_list = list(coeff) # splits coefficient name in to list i.e. ['y','1','0']
 			coeff_mat[int(name_list[1]),int(name_list[2])] = new_coeff
 		states[state]['matrix'] = coeff_mat
 
