@@ -69,5 +69,5 @@ if __name__ == '__main__':
 		print('delta v = {}'.format(deltav))
 
 	energy = get_transition_E(Y1,v1,J1,Y2,v2,J2)
-	print('Transition Energy: {}'.format(energy))
+	print('Transition Energy: {} cm^-1'.format(energy))
 
