@@ -1,3 +1,7 @@
+# Challenge 5
+# John Daniel
+# This script takes vibrational and rotational quantum numbers for the X and A state of AlCl and returns the energy using the Dunham expansion.
+
 import numpy as np
 from configparser import ConfigParser
 import sys
