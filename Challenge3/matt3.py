@@ -3,7 +3,7 @@ import numpy as np
 import sys
 import math 
 
-f0 = 1146.331050
+f0 = 1146.331050*1e12
 f = np.linspace(-500, 500, 1000) + f0
 m = 62
 c = 299792458
@@ -21,5 +21,5 @@ plt.figure()
 plt.title('Dopper-Broadened Gaussian at ' + str(T) + ' K for Al^27Cl^35')
 plt.xlabel('Freq. (THz)')
 plt.ylabel('Absorption')
-plt.plot(f, Abs)
+plt.plot(f*1e4, Abs)
 plt.show()
