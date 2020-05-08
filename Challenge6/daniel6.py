@@ -13,13 +13,13 @@ class branch():
 	def get_lines(self):
 		lines = []
 		for i in range(self.n):
-			if self.branch == 'Q':
+			if self.branch == 'Q': # deltaJ = 0
 				lower_state = state('X',self.v1,i)
 				upper_state = state('A',self.v2,i)
-			elif self.branch == 'P':
+			elif self.branch == 'P': # deltaJ = -1
 				lower_state = state('X',self.v1,i+1)
 				upper_state = state('A',self.v2,i)
-			elif self.branch == 'R':
+			elif self.branch == 'R': # deltaJ = +1
 				lower_state = state('X',self.v1,i)
 				upper_state = state('A',self.v2,i+1)
 			else:
@@ -34,7 +34,7 @@ class line():
 		self.s1 = state_1
 		self.s2 = state_2
 		self.E = np.abs(self.s2.E - self.s1.E)
-		self.T = 4
+		self.T = 4 # K
 		self.a = self.get_amp()
 
 	def get_amp(self):
@@ -42,8 +42,8 @@ class line():
 		h = 6.62607004e-34 # m^2*kg*s^-1
 		c = 299792458
 
-		B = 2.4393006612e-1
-		we = 481.774655196
+		B = 2.4393006612e-1 # cm^-1
+		we = 481.774655196 # cm^-1
 
 		J = self.s1.J
 		Ej = h*c*100*B*J*(J+1)
